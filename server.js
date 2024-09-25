@@ -7,6 +7,8 @@ const jobRoutes = require("./routes/job");
 //create a server
 const app = express();
 
+app.use(cors());
+
 app.use(express.json());
 
 //connect to db
